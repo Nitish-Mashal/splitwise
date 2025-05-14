@@ -5,6 +5,8 @@ app_description = "This is the splitwise app used to expense-splitting applicati
 app_email = "nitishmashal0@gmail.com"
 app_license = "mit"
 
+export_python_type_annotations = True
+
 # Apps
 # ------------------
 

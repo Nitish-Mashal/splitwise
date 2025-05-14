@@ -5,7 +5,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "user_details_section",
   "paid_by",
+  "column_break_fwxy",
+  "split_method",
+  "section_break_xzij",
   "splits",
   "section_break_mmsf",
   "date",
@@ -50,7 +54,8 @@
   },
   {
    "fieldname": "section_break_mmsf",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "amount",
@@ -89,14 +94,37 @@
    "fieldname": "splits",
    "fieldtype": "Table",
    "label": "Splits",
-   "options": "Expense Split"
+   "options": "Expense Split",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fwxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Equally",
+   "fieldname": "split_method",
+   "fieldtype": "Select",
+   "label": "Split Method",
+   "options": "Equally\nManual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xzij",
+   "fieldtype": "Section Break",
+   "label": "Split Amount Details"
+  },
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-14 15:08:49.495998",
+ "modified": "2025-05-14 16:52:44.477031",
  "modified_by": "Administrator",
  "module": "Splitwise",
  "name": "Expense",
