@@ -4,9 +4,14 @@ import { userResource } from '@/data/user'
 
 const routes = [
   {
-    path: '/',
+    path: '/dashboard',
     name: 'Dashboard',
     component: () => import('@/pages/Dashboard.vue'),
+  },
+  {
+    path: '/contactus',
+    name: 'ContactUs',
+    component: () => import('@/pages/ContactUs.vue'),
   }
 ]
 
